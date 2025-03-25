@@ -10,3 +10,11 @@ class contact_us(models.Model):
     def __str__(self):
         return (self.name + ' - ' + self.subject)
     
+    
+class Area(models.Model):
+    name=models.CharField(max_length=100,null=True,blank=True)
+    email=models.EmailField(max_length=100,null=True)
+    contact_number_1=models.IntegerField(max_length=15,null=True,blank=True)
+    contact_number_2=models.IntegerField(max_length=15,null=True,blank=True)
+    
+    
