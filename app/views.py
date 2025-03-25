@@ -11,7 +11,7 @@ def contact_page(request):
         form = Contact_UsForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect("/")
+            return redirect("/contact")
         else:
             form = Contact_UsForm()
     context={'form':form}
