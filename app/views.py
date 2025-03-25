@@ -4,7 +4,9 @@ from app.forms import Contact_UsForm
 def index_page(request):
     context={}
     return render(request,'app/index.html',context)
-
+def about_page(request):
+    context={}
+    return render(request,'app/about_us.html',context)
 def contact_page(request):
     form=Contact_UsForm()
     if request.method == 'POST':
